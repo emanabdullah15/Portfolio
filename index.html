@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <div class="text-2xl font-bold text-gray-800">
+                <a href="#">MyPortfolio</a>
+            </div>
+            <ul class="hidden md:flex space-x-6 text-gray-600 font-medium">
+                <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+                <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
+                <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+            <button id="menu-toggle" class="block md:hidden focus:outline-none text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <ul class="flex flex-col space-y-4 py-4 px-6 text-gray-600 font-medium">
+                <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+                <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
+                <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="bg-gray-100 py-20">
+        <div class="container mx-auto flex flex-col items-center justify-center text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">Welcome to My Portfolio</h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-6">I am a passionate developer, creating beautiful and functional websites.</p>
+            <a href="#projects" class="bg-blue-500 text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-blue-600">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="bg-white py-20">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Me</h2>
+                <p class="text-lg text-gray-600 mb-6">Hello! I'm a dedicated and passionate developer with a love for creating intuitive and engaging user experiences. With a background in Computer Science, I enjoy solving complex problems and learning new technologies to build better digital solutions.</p>
+                <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-blue-600">Get in Touch</a>
+            </div>
+            <div class="flex justify-center">
+                <img src="img/profile.png" alt="About Me" class="rounded-lg ">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-gray-100 py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="img/project1.PNG" alt="Project 1" class="rounded mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Project One</h3>
+                    <p class="text-gray-600">A brief description of the first project showcasing your work and skills.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="img/project2.PNG" alt="Project 2" class="rounded mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Project Two</h3>
+                    <p class="text-gray-600">A brief description of the second project showcasing your work and skills.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="img/project3.PNG" alt="Project 3" class="rounded mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Project Three</h3>
+                    <p class="text-gray-600">A brief description of the third project showcasing your work and skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="bg-white py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10">My Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-10">
+                <div class="flex flex-col items-center">
+                    <img src="img/skill1.png" alt="Skill 1" class="mb-4">
+                    <h3 class="text-xl font-medium text-gray-800">HTML</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="img/skill2.png" alt="Skill 2" class="mb-4">
+                    <h3 class="text-xl font-medium text-gray-800">CSS</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="img/skill3.png" alt="Skill 3" class="mb-4">
+                    <h3 class="text-xl font-medium text-gray-800">JavaScript</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="img/skill4.png" alt="Skill 4" class="mb-4">
+                    <h3 class="text-xl font-medium text-gray-800">React</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="img/skill5.png" alt="Skill 5" class="mb-4">
+                    <h3 class="text-xl font-medium text-gray-800">TailwindCSS</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="img/skill6.png" alt="Skill 6" class="mb-4">
+                    <h3 class="text-xl font-medium text-gray-800">Node.js</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="img/skill7.png" alt="Skill 7" class="mb-4">
+                    <h3 class="text-xl font-medium text-gray-800">Git</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="img/skill8.png" alt="Skill 8" class="mb-4">
+                    <h3 class="text-xl font-medium text-gray-800">MySQL</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="bg-white py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10">Contact Me</h2>
+            <p class="text-lg text-gray-600 mb-6">Have a question or want to work together? I'd love to hear from you!</p>
+            <form action="https://formsubmit.co/emanabdullah467@gmail.com" method="POST" class="max-w-xl mx-auto">
+                <div class="mb-4">
+                    <input type="text" id="name" name="name" placeholder="Your Name" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <input type="email" id="email" name="email" placeholder="Your Email" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <textarea name="message" id="message" rows="5" placeholder="Your Message" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <input type="hidden" name="_template" value="table">
+                <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-blue-600">Send Message</button>
+
+            </form>
+        </div>
+    </section>
+    <footer class="bg-gray-800 text-white py-6 mt-10">
+        <div class="container mx-auto text-center">
+            <div class="mb-4">
+                <a href="#" class="text-2xl font-bold">MyPortfolio</a>
+            </div>
+            <div class="mb-4">
+                <ul class="flex justify-center space-x-6">
+                    <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+                    <li><a href="#about" class="hover:text-blue-400">About</a></li>
+                    <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+                    <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+                    <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+                </ul>
+            </div>
+            <div class="text-sm text-gray-400">
+                © 2025 MyPortfolio. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // GSAP Animation
+        gsap.from('.section', {
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            stagger: 0.3,
+            scrollTrigger: {
+                trigger: '.section',
+                start: 'top bottom', // Start animation when the top of the section hits the bottom of the viewport
+                toggleActions: 'play none none none', // Play animation on scroll
+            },
+        });
+    </script>
+
+</body>
+</html>
